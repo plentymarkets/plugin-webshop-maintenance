@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>{{ trans("WebshopMaintenanceMode::Template.maintenanceTitle") }}</title>
+    <title>{{ webstoreName }} | {{ trans("WebshopMaintenanceMode::Template.maintenanceTitle") }}</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
           crossorigin="anonymous">
@@ -33,28 +33,26 @@
 </head>
 
 <body>
-
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="jumbotron">
-                <div class="row">
-                    <div class="col-6 offset-3 mb-5 mb-md-0 offset-md-0 col-md-3 d-flex">
-                        <div class="work-img"></div>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <h1 class="display-4">{{ trans('WebshopMaintenanceMode::Template.maintenanceHeadline') }}</h1>
-                        <hr/>
-                        <p class="lead">
-                            {{ trans('WebshopMaintenanceMode::Template.maintenanceMessage') }}
-                        </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-6 offset-3 mb-5 mb-md-0 offset-md-0 col-md-3 d-flex">
+                            <div class="work-img"></div>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <h1 class="display-4">{{ trans('WebshopMaintenanceMode::Template.maintenanceHeadline') }}</h1>
+                            <hr/>
+                            <p class="lead">
+                                {{ trans('WebshopMaintenanceMode::Template.maintenanceMessage') }}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
 </body>
 
 </html>
