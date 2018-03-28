@@ -31,8 +31,12 @@ class WebshopMaintenanceModeMiddleware extends Middleware
         
         /** @var Twig $twig */
         $twig = pluginApp(Twig::class);
+    
+        $response = $response->make(
+            $twig->render('WebshopMaintenanceMode::MaintenancePage', ['webstoreName' => $webstoreConfig->name]),
+            200
+        );
         
-        $response->setContent($twig->render('WebshopMaintenanceMode::MaintenancePage', ['webstoreName' => $webstoreConfig->name]));
         return $response;
     }
 }
